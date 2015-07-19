@@ -1,0 +1,14 @@
+{
+  "name": "loftschool-project-1",
+  "version": "0.1.0",
+  "private": true,
+  "devDependencies": {
+    "browser-sync": "^2.7.13",
+    "gulp": "^3.9.0",
+    "gulp-less": "^3.0.3",
+    "gulp-minify-css": "^1.2.0"
+  },
+  "dependencies": {
+    "path": "^0.11.14"
+  }
+}
