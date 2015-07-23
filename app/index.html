@@ -9,119 +9,127 @@
 		<meta name="description" content="Первый выпускной проект курса web-разработки LoftSchool 2015">
 		<meta name="keywords" content="LoftSchool, web-разработка">
 		<meta name="author" content="Николай Пойманов">
-		<!-- CSS -->
+		<!-- bower CSS -->
 		<link href="bower/normalize.css/normalize.css" rel="stylesheet">
+		
+		<!-- fonts CSS -->
+		<link rel="stylesheet" href="fonts/fira.css">
+		<link rel="stylesheet" href="fonts/proxima.css">
+
+		<!-- My CSS -->
 		<link href="css/style.css" rel="stylesheet">
+
+		<!-- Modernizr -->
+		<script src="bower/modernizer/modernizr.js"></script>
 	</head>
 	<body>
-		<header>
-			<div class="content-layout">
-				<div class="logo"><img src="" alt=""></div>
-					<ul class="social">
-						<li><a href="#">vk</a></li>
-						<li><a href="#">tw</a></li>
-						<li><a href="#">fb</a></li>
-						<li><a href="#">git</a></li>
-					</ul>
-				</div>
-			</div>
-		</header>
-		<main>
-			<div class="content-layout-2">
-				<aside class="sidebar">
-					<nav class="main-nav">
-						<ul>
-							<li><a href="#">Обо мне</a></li>
-							<li><a href="#">Мои работы</a></li>
-							<li><a href="#">Связаться со мной</a></li>
-						</ul>
-					</nav>
-					<div class="contacts">
-						<h2>Контакты</h2>
-						<ul>
-							<li><a href="#" class="_mail">pochta@mail.ru</a></li>
-							<li><a href="#" class="tel">+798112342323</a></li>
-							<li><a href="#" class="skype">nickname</a></li>
-						</ul>
-					</div>
-				</aside>
-				<section class="content">
-					<article class="info">
-						<h2 class="content-header">
-							Основная информация
-						</h2>
-						<div class="photo">
-							<img src="" alt="Моя фотография">
-						</div>
-						<div class="data">
-							<ul>
-								<li>
-									<div class="caption">Меня зовут:</div>
-									<div class="desc">Иванов Андрей Степанович</div>
-								</li>
-								<li>
-									<div class="caption">Мой возраст:</div>
-									<div class="desc">25 лет</div>
-								</li>
-								<li>
-									<div class="caption">Мой город:</div>
-									<div class="desc">Санкт-Петербург, Россия</div>
-								</li>
-								<li>
-									<div class="caption">Моя специализация:</div>
-									<div class="desc">FRONTEND разработчик</div>
-								</li>
-								<li>
-									<div class="caption">Ключевые навыки</div>
-									<div class="desc">
-										<ul>
-											<li>html</li>
-											<li>css</li>
-											<li>javascript</li>
-											<li>gulp</li>
-											<li>git</li>
-										</ul>
-									</div>
-								</li>
-								
+		<div class="wrapper">
+			<div class="main-content">
+				<header class="main-header">
+					<div class="content-layout clearfix">
+						<div class="logo"><img src="img/logo.png" alt="LoftSchool Project #1"></div>
+							<ul class="social">
+								<li class="social-item"><a href="#" class="social-link vk">vk</a></li>
+								<li class="social-item"><a href="#" class="social-link tw">tw</a></li>
+								<li class="social-item"><a href="#" class="social-link fb">fb</a></li>
+								<li class="social-item"><a href="#" class="social-link github">github</a></li>
 							</ul>
 						</div>
-					</article>
-					<article class="carrier">
-						<h2 class="carrier-header">Опыт работы</h2>
-						<ul class="data">
-							<li>
-								<div class="place">"ИП Боровицкий" - Продавец дисков</div>
-								<div class="date">Сентябрь 2005 - Август 2008</div>
-							</li>
-							<li>
-								<div class="place">"ООО Системы безопасности" - Системный администратор</div>
-								<div class="date">Июнь 2008 - Июль 2010</div>
-							</li>
-							<li></li>
-						</ul>
-					</article>
-					<article class="education">
-						<h2 class="education-header">Образование</h2>
-						<ul class="data">
-							<li class="degree">
-								<div class="place">Незаконченное высшее. СПБГУ ИТМО</div>
-								<div class="date">Октябрь 2012 - по настоящее время</div>
-							</li>
-							<li class="course">
-								<div class="place">Курсы LoftScholl</div>
-								<div class="date">Ноябрь 2014 - по настоящее время</div>
-							</li>
-						</ul>
-					</article>
-				</section>
+				</header>
+				<main>
+					<div class="content-layout-2 clearfix">
+						<aside class="sidebar">
+							<nav class="main-nav">
+								<ul class="nav-list">
+									<li class="nav-item active"><a href="#" class="nav-link">Обо мне</a></li>
+									<li class="nav-item"><a href="#" class="nav-link">Мои работы</a></li>
+									<li class="nav-item"><a href="#" class="nav-link">Связаться со мной</a></li>
+								</ul>
+							</nav>
+							<div class="contacts">
+								<ul class="contacts-list">
+									<li class="contacts-header">Контакты</li>
+									<li class="contacts-item"><a href="#" class="contacts-link mail">n.poymanov@gmail.com</a></li>
+									<li class="contacts-item"><a href="#" class="contacts-link tel">+79096425207</a></li>
+									<li class="contacts-item"><a href="#" class="contacts-link skype">n.poymanov</a></li>
+								</ul>
+							</div>
+						</aside>
+						<section class="content">
+							<article class="info">
+								<h2 class="content-header">
+									Основная информация
+								</h2>
+								<div class="info-wrapper clearfix">
+									<div class="photo">
+										<img src="img/photo.jpg" class="avatar" alt="Моя фотография">
+									</div>
+									<div class="data">
+										<ul class="data-list">
+											<li class="data-item">
+												<div class="caption">Меня зовут:</div>
+												<div class="desc">Пойманов Николай Алексеевич</div>
+											</li>
+											<li class="data-item">
+												<div class="caption">Мой возраст:</div>
+												<div class="desc">26 лет</div>
+											</li>
+											<li class="data-item">
+												<div class="caption">Мой город:</div>
+												<div class="desc">Москва, Россия</div>
+											</li class="data-item">
+											<li class="data-item">
+												<div class="caption">Моя специализация:</div>
+												<div class="desc">HTML-верстальщик</div>
+											</li>
+											<li class="data-item">
+												<div class="caption">Ключевые навыки:</div>
+												<div class="desc">
+													<ul class="sublist">
+														<li class="sublist-item">html</li>
+														<li class="sublist-item">css</li>
+														<li class="sublist-item">javascript</li>
+														<li class="sublist-item">gulp</li>
+														<li class="sublist-item">git</li>
+													</ul>
+												</div>
+											</li>
+											
+										</ul>
+									</div>
+								</div>
+							</article>
+							<article class="status-info">
+								<h2 class="content-header">Опыт работы</h2>
+								<ul class="data-list">
+									<li class="data-item work">
+										<div class="place">"ООО ГУДВИЛЛ" - Программист 1с</div>
+										<div class="date">Февраль 2012 - Июль 2015</div>
+									</li>
+								</ul>
+							</article>
+							<article class="status-info">
+								<h2 class="content-header">Образование</h2>
+								<ul class="data-list">
+									<li class="data-item degree">
+										<div class="place">Высшее, НОУ ВПО ИУИИ</div>
+										<div class="date">Сентябрь 2011 - Июль 2015</div>
+									</li>
+									<li class="data-item course">
+										<div class="place">Курсы LoftScholl</div>
+										<div class="date">Июль 2015 - по настоящее время</div>
+									</li>
+								</ul>
+							</article>
+						</section>
+					</div>
+				</main>
 			</div>
-		</main>
-
-		<footer>
+		</div>
+		<footer class="main-footer">
 			<div class="content-layout-2">
-				<div class="auth"><a href="" class="auth"></a></div>
-				<div class="copyright">(с) 2015. Это мой сайт, пожалуйста, не копируйте ине воруйте его</div>
+				<div class="auth-block"><a href="#" class="auth-link"></a></div>
+				<div class="copyright">&copy; 2015. Это мой сайт, пожалуйста, не копируйте и не воруйте его</div>
 			</div>
 		</footer>
 		<!-- JS -->
