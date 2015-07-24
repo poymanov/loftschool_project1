@@ -61,7 +61,38 @@
                         <section class="content">
                             <div class="feedback">
                                 <h2 class="big-header">У вас интересный проект? Напишите мне</h2>
-                            </div>
+                                <form class="feedback-block-form">
+                                    <div class="section1 clearfix">
+                                        <div class="section1-block1">
+                                            <div class="block-label"><label for="name">Имя</label></div>
+                                            <div class="block-content"><input type="text" id="name" name="name" placeholder="Как к вам обращаться?"></div>
+                                        </div>
+                                        <div class="section1-block2">
+                                            <div class="block-label"><label for="email">Email</label></div>
+                                            <div class="block-content"><input type="email" id="email" name="email" placeholder="Куда мне писать?"></div>
+                                        </div>
+                                    </div>
+                                    <div class="section2">
+                                        <div class="block-label"><label>Сообщение</label></div>
+                                        <div class="block-content">
+                                            <textarea name="message" cols="62" rows="9">Кратко в чем суть</textarea>
+                                        </div>
+                                    </div>
+                                    <div class="section3">
+                                        <div class="block-label"><label>Введите код, указанный на картинке</label></div>
+                                            <div class="block-content clearfix">
+                                                <div class="captcha">
+                                                    <img src="img/img-captcha.png" alt="captcha" class="img-captcha">
+                                                </div>
+                                                <input type="text" name="validation" placeholder="Введите код">
+                                            </div>
+                                        </div>
+                                    <div class="section4 clearfix">
+                                        <input type="submit">
+                                        <input type="reset">
+                                    </div>
+                                </form>
+                            </div>                            
                         </section>
                     </div>
                 </main>
