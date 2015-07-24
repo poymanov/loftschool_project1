@@ -1,9 +1,130 @@
 //ЦВЕТА
+
+@color-text-1: #4a545d;
+
 @bg-color-1: #eff3f7;
+@bg-color-2: #edf8fc;
+@bg-color-3: rgba(1, 108, 164, 0.75);
+
+@border-color-1: #3ba8c0;
 
 .works {
 	margin-bottom: 25px;
 	background: @bg-color-1;
 	border-radius: 4px;
 	padding-bottom: 47px;
+	height: 100%;
 }
+
+.works-content {
+	
+}
+
+.works-list {
+	font-size: 0;
+	padding-left: 25px;
+	list-style-type: none;
+
+	.work-item {
+		display: inline-block;
+		margin-right: 30px;
+		width: 181px;
+		margin-bottom: 46px;
+		vertical-align: top;
+
+		&:nth-child(3n+3) {
+			margin-right: 0;
+		}
+		
+		.work-preview {
+			margin: 0;
+			margin-bottom: 10px;
+			position: relative;
+
+			&:hover .hover-block{
+				display: block;
+			}
+
+			.work-img {
+				border: 2px solid @border-color-1;
+				border-radius: 4px;
+				margin-bottom: 13px;
+				overflow: hidden;
+				cursor: pointer;
+			}
+
+			.hover-block {
+				display: none;
+				position: absolute;
+				background: @bg-color-3;
+				border-radius: 4px;
+				top: 1px;
+				left: 1px;
+				width: 183px;
+				height: 129px;
+				text-align: center;
+
+				.project-link {
+					border: 2.5px solid @bg-color-1;
+					border-radius: 4px;
+					font-size: 12px;
+					color: @bg-color-1;
+					text-decoration: none;
+					font-family: 'fira_sansbook';
+					display: inline-block;
+					padding-left: 2px;
+					padding-right: 2px;
+					margin-top: 25%;
+				}
+			}
+			.work-link-block {
+				text-align: center;
+
+				.work-link {
+					text-decoration: none;
+					color: @border-color-1;
+					font-size: 13px;
+					font-family: 'fira_sanslight_italic';
+					text-align: center;
+				}
+			}
+		}
+
+		.work-desc {
+			font-size: 15px;
+			color: @color-text-1;
+			text-align: center;
+			font-family: 'fira_sanslight';
+			line-height: 1.2em;
+		}
+	}
+
+	.new-item {
+		background: @bg-color-2 url(../../img/icon-new-work.png) center 34px no-repeat;
+		height: 129px;
+		vertical-align: top;
+		border: 1px dashed @border-color-1;
+		border-radius: 4px;
+		text-align: center;
+
+		.link-new {
+			font-size: 13px;
+			color: @border-color-1;
+			font-family: 'fira_sanslight';
+			text-decoration: none;
+			display: table-cell;
+			height: 129px;
+			width: 183px;
+			text-align: center;
+			vertical-align: middle;
+			padding-top: 25px;
+
+			&:hover {
+				text-decoration: underline;
+			}
+		}
+
+
+	}
+}
+
