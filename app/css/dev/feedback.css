@@ -1,0 +1,17 @@
+.feedback {
+  margin-bottom: 25px;
+  background: #eff3f7;
+  border-radius: 4px;
+  padding-bottom: 47px;
+  height: 100%;
+  overflow: hidden;
+}
+.big-header {
+  font-size: 27px;
+  text-align: center;
+  color: #ffffff;
+  padding-top: 48px;
+  padding-bottom: 48px;
+  background: #48cbe8;
+  border-bottom: 15px solid #67dffa;
+}
