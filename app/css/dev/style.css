@@ -185,13 +185,13 @@ body {
   padding-bottom: 15px;
   margin-bottom: 27px;
 }
-.info {
+.status-info {
+  margin-bottom: 25px;
   background: #eff3f7;
   border-radius: 4px;
   padding-bottom: 47px;
-  margin-bottom: 25px;
 }
-.info .photo {
+.status-info .photo {
   float: left;
   margin-left: 54px;
   overflow: hidden;
@@ -200,26 +200,26 @@ body {
   border: 5px solid #3ba8c0;
   border-radius: 50%;
 }
-.info .photo .avatar {
+.status-info .photo .avatar {
   position: relative;
   left: -25px;
 }
-.info .data {
+.status-info .data-info {
   float: left;
   margin-left: 24px;
   width: 370px;
 }
-.info .data .data-item {
+.status-info .data-info .data-info-item {
   list-style-type: none;
   font-size: 0;
 }
-.info .data .data-item .caption {
+.status-info .data-info .data-info-item .caption {
   font-size: 17px;
   color: #4a545d;
   font-family: 'fira_sansmedium';
   display: inline-block;
 }
-.info .data .data-item .desc {
+.status-info .data-info .data-info-item .desc {
   font-size: 15px;
   color: #37424d;
   font-family: 'fira_sansbook';
@@ -227,12 +227,12 @@ body {
   margin-left: 18px;
   vertical-align: top;
 }
-.info .data .data-item .desc .sublist {
+.status-info .data-info .data-info-item .desc .sublist {
   font-size: 0;
   width: 193px;
   vertical-align: top;
 }
-.info .data .data-item .desc .sublist .sublist-item {
+.status-info .data-info .data-info-item .desc .sublist .sublist-item {
   display: inline-block;
   font-size: 14px;
   color: #ffffff;
@@ -254,12 +254,6 @@ body {
   padding-left: 10px;
   padding-right: 10px;
   text-align: center;
-}
-.status-info {
-  margin-bottom: 25px;
-  background: #eff3f7;
-  border-radius: 4px;
-  padding-bottom: 47px;
 }
 .status-info .data-item {
   list-style-type: none;
