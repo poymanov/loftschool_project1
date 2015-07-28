@@ -114,7 +114,7 @@
 											</div>
 										</li>										
 										<li class="work-item new-item">
-											<a href="#" class="link-new">Добавить работу</a>
+											<a href="#" class="link-new" id="new-work">Добавить работу</a>
 										</li>
 									</ul>
 								</div>
@@ -130,9 +130,36 @@
 				<div class="copyright">&copy; 2015. Это мой сайт, пожалуйста, не копируйте и не воруйте его</div>
 			</div>
 		</footer>
-		<!-- JS -->
-		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-		<script>window.jQuery || document.write('<script src="bower/jquery/dist/jquery.min.js"><\/script>')</script>
-		<script src="js/script.js"></script>
+	
+		<div id="block-upload">
+			<h2 class="form-header">Добавление проекта</h2>
+			<form action="" class="form-upload">
+				<div class="form-section">
+					<label for="form-caption" class="label-form">Название проекта</label>
+					<input type="text" name="caption" id="form-caption" placeholder="Введите название">
+				</div>
+				<div class="form-section">
+					<label for="form-file" class="label-form">Картинка проекта</label>
+					<input type="file" name="file" id="form-file" placeholder="Загрузите изображение">
+				</div>
+				<div class="form-section">
+					<label for="form-url" class="label-form">URL проекта</label>
+					<input type="text" name="url" id="form-url" placeholder="Добавьте ссылку">
+				</div>
+				<div class="form-section">
+					<label for="form-desc" class="label-form">Описание проекта</label>
+					<textarea name="desc" id="form-desc" cols="30" rows="4">Пара слов о Вашем проекте</textarea>
+				</div>
+				<input type="submit" value="Добавить">
+				<a href="#" id="close-form"></a>
+			</form>
+		</div>
+	
+	<!-- JS -->
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+	<script src="bower/bpopup/jquery.bpopup.min.js"></script>
+	<script>window.jQuery || document.write('<script src="bower/jquery/dist/jquery.min.js"><\/script>')</script>
+	<script src="js/script.js"></script>
+
 	</body>
 </html>

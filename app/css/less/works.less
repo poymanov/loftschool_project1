@@ -1,12 +1,19 @@
 //ЦВЕТА
 
+@color-white: #fff;
+
 @color-text-1: #4a545d;
+@color-text-2: #959aa8;
 
 @bg-color-1: #eff3f7;
 @bg-color-2: #edf8fc;
 @bg-color-3: rgba(1, 108, 164, 0.75);
+@bg-color-4: #48cbe8;
 
 @border-color-1: #3ba8c0;
+@border-color-2: #67dffa;
+
+@shadow-color-1: rgba(13, 16, 7, 0.29);
 
 .works {
 	margin-bottom: 25px;
@@ -128,3 +135,93 @@
 	}
 }
 
+#block-upload {
+	width: 362px;
+	border-radius: 3px;
+	overflow: hidden;
+	box-shadow: 0 4px 6.9px 0.1px @shadow-color-1;
+	background: @bg-color-1;
+	position: relative;
+	display: none;
+
+	.form-header {
+		font-size: 25px;
+		padding-left: 12px;
+		color: @color-white;
+		padding-top: 3px;
+		padding-bottom: 2px;
+		background: @bg-color-4;
+		border-bottom: 9px solid @border-color-2;
+		font-family: 'fira_sansregular';
+		margin-bottom: 12px;
+	}
+
+	.form-upload {
+		width: 320px;
+		margin: 0 auto;
+		text-align: center;
+		margin-bottom: 22px;
+
+		.label-form {
+			font-family: 'fira_sansbook';
+			display: block;
+			color: @color-text-2;
+			font-size: 17px;
+			text-align: left;
+		}
+		.form-section {
+			margin-bottom: 15px;
+		}
+
+		input, textarea {
+			width: 302px;
+			border: 1px solid @border-color-2;
+			border-radius: 4px;
+			padding-left: 9px;
+			padding-right: 9px;
+			color: @bg-color-2;
+			font-family: 'fira_sanslight';
+			font-size: 13px;
+			padding-top: 11px;
+			padding-bottom: 9px;
+			color: @border-color-2;
+		}
+
+		input[type="submit"] {
+			border-radius: 5px;
+			border: 0;
+			color: @color-white;
+			width: 140px;
+			font-size: 19px;
+			font-family: 'fira_sansbook';
+			padding-left: 10px;
+			padding-right: 10px;
+			padding-top: 2px;
+			padding-bottom: 1px;
+			background: @bg-color-4;
+			box-shadow: inset 0 -2px 0 @border-color-1;
+		}
+
+		input::-webkit-input-placeholder {
+			color: @border-color-2;
+			font-family: 'fira_sanslight';
+			font-size: 13px;
+		}
+
+		input:-moz-placeholder {
+			color: @border-color-2;
+			font-family: 'fira_sanslight';
+			font-size: 13px;
+		}
+	}
+
+	#close-form {
+		display: block;
+		width: 25px;
+		height: 25px;
+		position: absolute;
+		top: 2%;
+		right: 4%;
+		background: url(../../img/close.png) 0 0 no-repeat;
+	}
+}
