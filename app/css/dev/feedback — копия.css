@@ -1,0 +1,128 @@
+.feedback {
+  margin-bottom: 25px;
+  background: #eff3f7;
+  border-radius: 4px;
+  padding-bottom: 47px;
+  height: 100%;
+  overflow: hidden;
+}
+.big-header {
+  font-size: 27px;
+  text-align: center;
+  color: #ffffff;
+  padding-top: 45px;
+  padding-bottom: 45px;
+  background: #48cbe8;
+  border-bottom: 15px solid #67dffa;
+  font-family: 'fira_sansbook';
+  margin-bottom: 49px;
+}
+.feedback-block-form {
+  width: 400px;
+  margin: 0 auto;
+}
+.section1-block1 {
+  float: left;
+}
+.section1-block2 {
+  float: right;
+}
+.block-label {
+  font-size: 19px;
+  color: #959aa8;
+}
+input[name="name"],
+input[name="email"],
+input[name="validation"] {
+  width: 174px;
+}
+input[name="validation"] {
+  float: right;
+  margin-top: 20px;
+}
+input,
+textarea {
+  border: 1px solid #48cbe8;
+  border-radius: 4px;
+  padding-left: 9px;
+  color: #48cbe8;
+  font-family: 'fira_sanslight';
+  font-size: 13px;
+  padding-top: 7px;
+  padding-bottom: 7px;
+  vertical-align: top;
+}
+.buttons {
+  border-radius: 5px;
+  border: 0;
+  color: #ffffff;
+  width: 137px;
+  font-size: 19px;
+  font-family: 'fira_sansbook';
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+input[type="submit"] {
+  border-radius: 5px;
+  border: 0;
+  color: #ffffff;
+  width: 137px;
+  font-size: 19px;
+  font-family: 'fira_sansbook';
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  float: left;
+  background: #48cbe8;
+  box-shadow: inset 0 -2px 0 #3ba8c0;
+}
+input[type="reset"] {
+  border-radius: 5px;
+  border: 0;
+  color: #ffffff;
+  width: 137px;
+  font-size: 19px;
+  font-family: 'fira_sansbook';
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  float: right;
+  background: #849db5;
+  box-shadow: inset 0 -2px 0 #687b8f;
+}
+input::-webkit-input-placeholder {
+  color: #48cbe8;
+  font-family: 'fira_sanslight';
+  font-size: 13px;
+}
+input:-moz-placeholder {
+  color: #48cbe8;
+  font-family: 'fira_sanslight';
+  font-size: 13px;
+}
+.section1-block1 {
+  margin-bottom: 17px;
+}
+.section2 {
+  margin-bottom: 10px;
+}
+.section3 {
+  margin-bottom: 21px;
+}
+.captcha {
+  border: 1px solid #48cbe8;
+  border-radius: 4px;
+  background: #ffffff;
+  width: 191px;
+  height: 79px;
+  text-align: center;
+  overflow: hidden;
+  float: left;
+}
+.captcha .img-captcha {
+  padding-top: 25px;
+}
