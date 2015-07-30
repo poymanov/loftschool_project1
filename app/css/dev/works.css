@@ -172,7 +172,28 @@
   font-family: 'fira_sanslight';
   font-size: 13px;
 }
-#block-upload #close-form {
+#block-upload .form-upload input:disabled {
+  background: #ffffff;
+}
+#block-upload .form-upload .block-file {
+  position: relative;
+}
+#block-upload .form-upload .input-button {
+  width: 52px;
+  height: 41px;
+  background: url(../../img/upload-button.png) 0 0 no-repeat;
+  position: absolute;
+  top: 1px;
+  right: -2px;
+}
+#block-upload .form-upload .input-file {
+  -moz-opacity: 0;
+  filter: alpha(opacity=0);
+  opacity: 0;
+  font-size: 150px;
+  height: 100px;
+}
+#block-upload .b-close {
   display: block;
   width: 25px;
   height: 25px;
