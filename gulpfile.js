@@ -2,6 +2,7 @@ var gulp = require("gulp"),
 	browserSync = require("browser-sync"),
 	less = require('gulp-less'),
 	path = require('path'),
+	connect = require('gulp-connect-php'),
 	minifyCss = require('gulp-minify-css');
 
 gulp.task('server', function(){
