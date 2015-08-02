@@ -2,15 +2,20 @@
 
 @color-white: #ffffff;
 @color-text-1: #959aa8;
+@color-text-2: #f97e76;
 
 @bg-color-1: #eff3f7;
 @bg-color-2: #48cbe8;
+@bg-color-3: rgba(249, 126, 118, 0.33);
+@bg-color-4: rgba(73, 187, 123, 0.33);
 
 @border-color-1: #67dffa;
 @border-color-2: #48cbe8;
 @border-color-3: #3ba8c0;
+@border-color-4: #49bb7b;
 
 @shadow-color-1: rgba(13, 16, 7, 0.29);
+@shadow-color-2: rgba(13, 16, 7, 0.35);
 
 .table {
 	display: table;
@@ -96,4 +101,82 @@
 		font-size: 13px;
 	}
 
+}
+
+.msg-error {
+	background: @bg-color-3;
+	border: 1px solid @color-text-2;
+	border-radius: 4px;
+	padding-left: 9px;
+	margin-bottom: 9px;
+	display: none;
+	position: relative;
+	
+	.err-content {
+		font-family: 'fira_sansbook';
+		color: @color-text-2;
+		text-align: left;
+	}
+
+	.msg-error-header {
+		.err-content;
+		font-size: 25px;
+	}
+
+	.msg-error-text {
+		.err-content;
+		font-size: 15px;
+	}
+
+	.msg-error-close {
+		display: block;
+		width: 11px;
+		height: 11px;
+		background: url(../../img/msg-error-close.png);
+		position: absolute;
+		top: 5px;
+		right: 5px;
+	}
+}
+
+.msg-success {
+	display: none;
+	background: @bg-color-1;
+	border-radius: 4px;
+	width: 318px;
+	box-shadow: 0 6px 12.5px 0.5px @shadow-color-2;
+	padding: 22px;
+	position: relative;
+	
+	.b-close {
+		background: url(../../img/msg-success-close.png);
+		display: block;
+		width: 11px;
+		height: 11px;
+		position: absolute;
+		top: 27px;
+		right: 27px;
+	}
+
+	.msg-success-wrapper {
+		background: @bg-color-4;
+		border-radius: 4px;
+		border: 1px solid @border-color-4;
+		
+		.success {
+			color: @border-color-4;
+			font-family: 'fira_sansbook';
+			padding-left: 9px;
+		}
+
+		.msg-success-header {
+			.success;
+			font-size: 25px;
+		}
+
+		.msg-success-text {
+			.success;
+			font-size: 15px;
+		}
+	}
 }

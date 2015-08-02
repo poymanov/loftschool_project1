@@ -73,3 +73,78 @@
   font-family: 'fira_sanslight';
   font-size: 13px;
 }
+.msg-error {
+  background: rgba(249, 126, 118, 0.33);
+  border: 1px solid #f97e76;
+  border-radius: 4px;
+  padding-left: 9px;
+  margin-bottom: 9px;
+  display: none;
+  position: relative;
+}
+.msg-error .err-content {
+  font-family: 'fira_sansbook';
+  color: #f97e76;
+  text-align: left;
+}
+.msg-error .msg-error-header {
+  font-family: 'fira_sansbook';
+  color: #f97e76;
+  text-align: left;
+  font-size: 25px;
+}
+.msg-error .msg-error-text {
+  font-family: 'fira_sansbook';
+  color: #f97e76;
+  text-align: left;
+  font-size: 15px;
+}
+.msg-error .msg-error-close {
+  display: block;
+  width: 11px;
+  height: 11px;
+  background: url(../../img/msg-error-close.png);
+  position: absolute;
+  top: 5px;
+  right: 5px;
+}
+.msg-success {
+  display: none;
+  background: #eff3f7;
+  border-radius: 4px;
+  width: 318px;
+  box-shadow: 0 6px 12.5px 0.5px rgba(13, 16, 7, 0.35);
+  padding: 22px;
+  position: relative;
+}
+.msg-success .b-close {
+  background: url(../../img/msg-success-close.png);
+  display: block;
+  width: 11px;
+  height: 11px;
+  position: absolute;
+  top: 27px;
+  right: 27px;
+}
+.msg-success .msg-success-wrapper {
+  background: rgba(73, 187, 123, 0.33);
+  border-radius: 4px;
+  border: 1px solid #49bb7b;
+}
+.msg-success .msg-success-wrapper .success {
+  color: #49bb7b;
+  font-family: 'fira_sansbook';
+  padding-left: 9px;
+}
+.msg-success .msg-success-wrapper .msg-success-header {
+  color: #49bb7b;
+  font-family: 'fira_sansbook';
+  padding-left: 9px;
+  font-size: 25px;
+}
+.msg-success .msg-success-wrapper .msg-success-text {
+  color: #49bb7b;
+  font-family: 'fira_sansbook';
+  padding-left: 9px;
+  font-size: 15px;
+}

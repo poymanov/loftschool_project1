@@ -136,6 +136,14 @@ var app = (function() {
 		//Форма обратной связи
 		_submitForm('feedback-form','server','feedback');
 
+		//Форма авторизации связи
+		_submitForm('auth-form','server','auth');
+
+		//Для всех форм при reset сбрасываем тултипы
+		$('form').on('reset', function() {
+			$('input').trigger('hideTooltip');
+			$('textarea').trigger('hideTooltip');
+		});
 	};
 
 	//Исправление placeholder в IE
