@@ -24,6 +24,9 @@
 
         <!-- Modernizr -->
         <script src="bower/modernizer/modernizr.js"></script>
+
+        <!-- qTip2 -->
+        <link rel="stylesheet" href="bower/qtip2/jquery.qtip.min.css">
     </head>
     <body>
         <div class="wrapper">
@@ -59,23 +62,28 @@
                             </div>
                         </aside>
                         <section class="content">
-                            <div class="feedback">
+                            <div class="feedback" id="feedback">
                                 <h2 class="big-header">У вас интересный проект? Напишите мне</h2>
-                                <form class="feedback-block-form">
+                                <form class="feedback-block-form" id="feedback-form">
+                                    <div class="msg-error">
+                                        <div class="msg-error-header">Ошибка!</div>
+                                        <div class="msg-error-text"></div>
+                                        <a href="#" class="msg-error-close"></a>
+                                    </div>
                                     <div class="section1 clearfix">
                                         <div class="section1-block1">
                                             <div class="block-label"><label for="name">Имя</label></div>
-                                            <div class="block-content"><input type="text" id="name" name="name" placeholder="Как к вам обращаться?"></div>
+                                            <div class="block-content"><input type="text" id="name" name="name" placeholder="Как к вам обращаться?" qtip-position="left" qtip-content="Вы не ввели имя"></div>
                                         </div>
                                         <div class="section1-block2">
                                             <div class="block-label"><label for="email">Email</label></div>
-                                            <div class="block-content"><input type="email" id="email" name="email" placeholder="Куда мне писать?"></div>
+                                            <div class="block-content"><input type="email" id="email" name="email" placeholder="Куда мне писать?" qtip-position="right" qtip-content="Вы не ввели email"></div>
                                         </div>
                                     </div>
                                     <div class="section2">
                                         <div class="block-label"><label>Сообщение</label></div>
                                         <div class="block-content">
-                                            <textarea name="message" cols="62" rows="9">Кратко в чем суть</textarea>
+                                            <textarea name="message" id="message" cols="62" rows="9" placeholder="Кратко в чем суть" qtip-position="left" qtip-content="Что вы от меня хотите?"></textarea>
                                         </div>
                                     </div>
                                     <div class="section3">
@@ -84,14 +92,21 @@
                                                 <div class="captcha">
                                                     <img src="img/img-captcha.png" alt="captcha" class="img-captcha">
                                                 </div>
-                                                <input type="text" name="validation" placeholder="Введите код">
+                                                <input type="text" name="validation" id="validation" placeholder="Введите код" qtip-position="right" qtip-content="Вы не ввели код">
                                             </div>
                                         </div>
                                     <div class="section4 clearfix">
-                                        <input type="submit">
-                                        <input type="reset">
+                                        <input type="submit" class="no-validation">
+                                        <input type="reset" class="no-validation">
                                     </div>
                                 </form>
+                            </div>
+                            <div class="msg-success">
+                                <div class="msg-success-wrapper">
+                                    <div class="msg-success-header">Ура!</div>
+                                    <div class="msg-success-text">Сообщение мне отправлено</div>
+                                </div>
+                                <a href="#" class="b-close"></a>
                             </div>                            
                         </section>
                     </div>
@@ -107,6 +122,8 @@
         <!-- JS -->
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="bower/jquery/dist/jquery.min.js"><\/script>')</script>
+        <script src="bower/bpopup/jquery.bpopup.min.js"></script>
+        <script src="bower/qtip2/jquery.qtip.min.js"></script>
         <script src="js/script.js"></script>
     </body>
 </html>

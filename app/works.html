@@ -24,6 +24,9 @@
 
 		<!-- Modernizr -->
 		<script src="bower/modernizer/modernizr.js"></script>
+
+		<!-- qTip2 -->
+		<link rel="stylesheet" href="bower/qtip2/jquery.qtip.min.css">
 	</head>
 	<body>
 		<div class="wrapper">
@@ -133,32 +136,44 @@
 	
 		<div id="block-upload">
 			<h2 class="form-header">Добавление проекта</h2>
-            <div class="msg-error"></div>
-			<form action="" class="form-upload">
+			<form action="" class="form-upload" id="form-upload">
+				<div class="msg-error">
+					<div class="msg-error-header">Ошибка!</div>
+					<div class="msg-error-text"></div>
+					<a href="#" class="msg-error-close"></a>
+				</div>
 				<div class="form-section">
 					<label for="form-caption" class="label-form">Название проекта</label>
-					<input type="text" name="caption" id="form-caption" placeholder="Введите название">
+					<input type="text" name="caption" id="form-caption" placeholder="Введите название"
+					qtip-position="left" qtip-content="Вы не ввели название">
 				</div>
 				<div class="form-section">
 					<label for="form-file" class="label-form">Картинка проекта</label>
 					<div class="block-file">
-						<input type="text" name="fake-input" class="fake-input" disabled placeholder="Загрузите изображение">
+						<input type="text" name="fake-input" class="fake-input" id="fake-input" disabled placeholder="Загрузите изображение" qtip-position="left" qtip-content="Вы не выбрали изображение!">
 						<div class="input-button">
-							<input type="file" name="select_file" id="form-file" size="1" class="input-file">
+							<input type="file" name="select_file" id="form-file" size="1" class="input-file no-validation">
 						</div>
 					</div>
 				</div>
 				<div class="form-section">
 					<label for="form-url" class="label-form">URL проекта</label>
-					<input type="text" name="url" id="form-url" placeholder="Добавьте ссылку">
+					<input type="text" name="url" id="form-url" placeholder="Добавьте ссылку" qtip-position="left" qtip-content="Вы не добавили ссылку!">
 				</div>
 				<div class="form-section">
 					<label for="form-desc" class="label-form">Описание проекта</label>
-					<textarea name="desc" id="form-desc" cols="30" rows="4">Пара слов о Вашем проекте</textarea>
+					<textarea name="desc" id="form-desc" cols="30" rows="4" qtip-position="left" qtip-content="Укажите описание проекта!" placeholder="Описание проекта обязательно"></textarea>
 				</div>
-				<input type="submit" value="Добавить">
+				<input type="submit" value="Добавить" class="no-validation">
 				<a href="#" class="b-close"></a>
 			</form>
+			<div class="msg-success">
+				<div class="msg-success-wrapper">
+					<div class="msg-success-header">Ура!</div>
+					<div class="msg-success-text">Проект успешно добавлен.</div>
+				</div>
+				<a href="#" class="b-close"></a>
+			</div>
 		</div>
 	
 	<!-- JS -->
@@ -166,6 +181,7 @@
 	<script src="bower/bpopup/jquery.bpopup.min.js"></script>
 	<script src="bower/jquery-placeholder/jquery.placeholder.min.js"></script>
 	<script>window.jQuery || document.write('<script src="bower/jquery/dist/jquery.min.js"><\/script>')</script>
+	<script src="bower/qtip2/jquery.qtip.min.js"></script>
 	<script src="js/script.js"></script>
 
 	</body>
