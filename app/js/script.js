@@ -56,6 +56,7 @@ var app = (function() {
 			//Проверка заполнения формы (берем только поля нужные для валидации)
 			$('#'+curForm+' input:not(".no-validation"), textarea').each(function(index, el) {
 				if($(el).val().length === 0) {
+					$(this).addClass('has-error');
 					showQtip($(this).attr('id'));
 					isError = true;
 				}
@@ -121,6 +122,7 @@ var app = (function() {
 				$('.fake-input').attr('placeholder', fileTitle);
 				$('.fake-input').attr('value', fileTitle);
 				$('.fake-input').trigger('hideTooltip');
+				$('.has-error').removeClass('has-error');
 			});
 		});
 
@@ -144,6 +146,11 @@ var app = (function() {
 			$('input').trigger('hideTooltip');
 			$('textarea').trigger('hideTooltip');
 		});
+
+		//Для всех форм при keydown удаляем класс .has-error
+		$('form').on('keydown', '.has-error', function() {
+			$(this).removeClass('has-error');
+		});
 	};
 
 	//Исправление placeholder в IE
@@ -155,8 +162,9 @@ var app = (function() {
 
 	//Сбрасываем все ошибки формы
 	var _resetFormsErrors = function(){
-		$('#block-upload .msg-error .msg-error-text').text('');
-		$('#block-upload .msg-error').hide();
+		$('.msg-error .msg-error-text').text('');
+		$('.msg-error').hide();
+		$('.has-error').removeClass('has-error');
 	};
 
 	//Убираем все тултипы
