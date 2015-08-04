@@ -122,7 +122,7 @@ var app = (function() {
 				$('.fake-input').attr('placeholder', fileTitle);
 				$('.fake-input').attr('value', fileTitle);
 				$('.fake-input').trigger('hideTooltip');
-				$('.has-error').removeClass('has-error');
+				$('.fake-input').removeClass('has-error');
 			});
 		});
 
@@ -145,6 +145,7 @@ var app = (function() {
 		$('form').on('reset', function() {
 			$('input').trigger('hideTooltip');
 			$('textarea').trigger('hideTooltip');
+			$('.has-error').removeClass('has-error');
 		});
 
 		//Для всех форм при keydown удаляем класс .has-error
