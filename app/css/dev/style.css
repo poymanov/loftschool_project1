@@ -226,6 +226,7 @@ body {
   display: inline-block;
   margin-left: 18px;
   vertical-align: top;
+  max-width: 225px;
 }
 .status-info .data-info .data-info-item .desc .sublist {
   font-size: 0;

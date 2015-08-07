@@ -13,7 +13,7 @@
 .works-list .work-item {
   display: inline-block;
   margin-right: 30px;
-  width: 181px;
+  width: 170px;
   margin-bottom: 46px;
   vertical-align: top;
 }
@@ -295,4 +295,5 @@
 .has-error {
   border: 1px solid #f97e76 !important;
   background: rgba(249, 126, 118, 0.33) !important;
+  background: #f97e76 !important;
 }

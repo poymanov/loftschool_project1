@@ -219,4 +219,5 @@ textarea:-moz-placeholder {
 .has-error {
   border: 1px solid #f97e76 !important;
   background: rgba(249, 126, 118, 0.33) !important;
+  background: #f97e76 !important;
 }
